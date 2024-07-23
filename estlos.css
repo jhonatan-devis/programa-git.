@@ -1,0 +1,78 @@
+
+.container{
+    background-color:rgb(44, 19, 75);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    margin: 3px
+    padding: 1px;
+    display: grid; 
+    grid-template-areas:  'aside header'
+                          'aside main'
+                          'aside  footer';
+    grid-template-columns: 0.5fr 0.8fr;
+    grid-template-rows: 0.1fr 0,1fr 0.1;
+      
+}
+header{
+    background-color: rgb(153, 153, 160);
+    grid-area: header;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+aside{
+    background-color: rgb(113, 121, 121);
+    grid-area: aside;
+}
+main{
+    background-color: rgb(36, 35, 33);
+    grid-area: main;
+}
+footer{
+    background-color: rgb(70, 67, 64);
+    grid-area: footer;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgba(19, 5, 5, 0.925);
+}
+p{
+    font-size: small;
+    text-align: left;
+    font-style: inherit;
+    font-weight: bold;
+    padding: 10px;    
+}
+a{
+    text-decoration: none;
+    color: rgba(121, 0, 235, 0.562);
+}
+ul li{
+    padding: 5px;
+    font-size: medium;
+
+}
+
+#conitem1{
+    padding: 90;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#conitem2{
+    padding: 90;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#conitem3{
+    padding: 90;
+    display: inline;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
